@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Google Tag Manager -->
+	<script>
+	(function(w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start': new Date().getTime(),
+			event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s),
+			dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-KSQC89C');
+	</script>
+	<!-- End Google Tag Manager -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/animasi.css">
+	<link rel="stylesheet" href="assets/css/swipper.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="<?php echo $config['web']['url'] ?>assets/images/favicon.ico">
+											
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	
+	<title>
+		RotasiPedia ~ SMM & Agen Pulsa Termurah </title>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'G-0FP8W4XD1Y');
+	</script>
+	<script>
+	//   Loading screen
+	$(document).ready(function() {
+		$(".preloader").fadeOut("slow");
+	})
+	</script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFV2MJVV7M"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'G-GFV2MJVV7M');
+	</script>
+	<style>
+	.preloader {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background-color: #fff;
+	}
+	
+	.preloader .loading {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font: 14px arial;
+	}
+	/* Swipper CSS */
+	
+	.swiper {
+		width: 100%;
+		height: 310px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.swiper-slide {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+	
+	@media (min-width: 1024px) {
+		.atas-card {
+			top: -100px;
+		}
+	}
+	</style>
+</head>
+
+<body  class="conten-bg-warna overflow-y-auto overflow-x-hidden" onload="checkMediaQuery()">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSQC89C" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+	<!-- Loading start -->
+	<div class="preloader">
+		<div class="loading"> <img src="assets/icons/loading.gif" width="243"> </div>
+	</div>
+	<!-- End Loading -->
+
+	<!-- start navbar mobile -->
+		<section id="navMenu" class="relative hidden  lg:hidden xl:hidden  hamburger flex transition-all ease-in  duration-700">
+			<div style="height: 100vh;"
+				class="bg-white shadow-xl fixed flex z-50 flex-col justify-between items-center  z-50  w-64    px-5  py-7">
+				<ul class="flex flex-col space-y-3 w-full">
+					<li class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1"><a class="w-full" href="#about">about</a></li>
+					<li class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1"><a href="#testimonial">Testimonial</a></li>
+					<li class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1"><a href="https://member.rotasipedia.com/page/product" >Daftar Harga</a></li>
+					<li class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1"> <a href="https://member.rotasipedia.com/page/general-questions" >Pertanyaan Umum</a>
+					</li>
+					<li class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1"> <a href="https://blog.rotasipedia.com/" >Blog</a>
+					</li>
+					<li class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1"> <a href="page/kontak.html" >Kontak</a>
+					</li>
+					<li class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1"> <a href="page/team.html" >Team</a>
+					</li>
+					<li class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1"> <a href="page/terms-of-service.html" >Terms Of Services</a> </li>
+					<li class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1"> <a href="page/privacy-policy.html" >Privacy Policy</a> </li>
+				</ul>
+		
+				<div>
+					<a class="bg-blue-600 px-10 py-3 duration-300 hover:ease-in-out   rounded-lg hover:relative hover:bottom-2 cursor-pointer text-white hover:bg-cyan-500 pointer-events-auto">Member Area</a>
+				</div>
+			</div>
+			<div style="height: 100vh;" onclick="addtogle()" class="w-full   absolute right-0 top-0">
+			</div>
+		</section>
+	<!-- end navbar mobile -->
+
+	<!-- header start -->
+	<header class="bg-transparent relative items-center top-0 left-0 w-full flex z-20">
+		<div class="container">
+			<div class="flex items-center justify-between relative">
+				<div class="px-2">
+					<a href="#home" class=" flex text-white"> <img src="assets/icons/logo-rotasi.svg" class="w-16" alt=""> </a>
+				</div>
+				<div class="flex items-center px-2">
+					<button onclick="addtogle()" id="hamburger" name="hamburger" type="button" class="block hamburger absolute right-4 lg:hidden"> 
+						<span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span> 
+						<span class="hamburger-line transition duration-300 ease-in-out"></span> 
+						<span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span> 
+					</button>
+					<nav  class="hidden animate__animated bg-white lg:block absolute mt-1 lg:mt-0 right-4 top-full py-5 border-solid border-gray-300 border-[1px]  shadow-lg rounded-lg max-w-[250px] w-full lg:static lg:border-none lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none transition-all ease-in-out duration-300">
+						<ul class="block lg:flex relative lg:-left-14">
+							<li class="group"> <a href="#home" class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">Beranda</a> </li>
+							<li class="group"> <a href="#about" class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">Abaout</a> </li>
+							<li class="group"> <a href="#testimonial" class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">Testimonial</a> </li>
+							<li class="group py-2 mx-6 mb-5 md:mb-0 lg:mb-0 ">
+								<button onclick="dropDown()" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex justify-between  items-center w-full text-base text-black rounded "> Page
+									<svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+									</svg>
+								</button>
+								<!-- Dropdown menu -->
+								<div id="dropdownNavbar" class="hidden z-10 w-44 font-normal bg-white rounded border divide-y divide-gray-100 shadow" style="backdrop-filter: blur(5px);">
+									<ul class="py-1 text-sm text-black" aria-labelledby="dropdownLargeButton">
+										<li> <a href="https://member.rotasipedia.com/page/general-questions" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pertanyaan Umum</a> </li>
+										<li> <a href="https://blog.rotasipedia.com/" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog</a> </li>
+										<li> <a href="page/kontak.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kontak</a> </li>
+										<li> <a href="page/team.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Team</a> </li>
+										<li> <a href="page/terms-of-service.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Terms Of Services</a> </li>
+										<li> <a href="page/privacy-policy.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Privacy Policy</a> </li>
+									</ul>
+								</div>
+							</li>
+							<li class="group ">
+								<div class="block flex justify-center  box-border relative  lg:-right-[69px]"> 
+									<a href="https://member.rotasipedia.com/auth/login" type="button" class="flex justify-center items-center mx-5 py-2 hilang text-red-600 hover:bg-gray-100 bg-white bg-opacity-50 w-[100px] h-[37px] font-semibold  p-1 rounded-md border border-red-600"> Login </a> 
+									<a href="https://member.rotasipedia.com/auth/register" type="button" class="flex justify-center items-center  mx-5 py-2 text-white hover:bg-red-500 w-[100px] h-[37px] font-semibold  p-1 rounded-md bg-red-600">Daftar </a> </div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end Header -->
+
+
+	<!-- hero start -->
+	<section id="home" class="pt-36 lg:pt-52 px-2">
+		<div class="container">
+			<div class="flex flex-wrap justify-between relative">
+				<div class="w-full self-center px-3 lg:-mt-10 lg:w-1/2">
+					<h1 class="ml9">
+						<span class="text-wrapper">
+							<span class="letters text-4xl lg:text-6xl font-bold">SMM Panel & PPOB H2H Termurah</span>
+						</span>
+					</h1>
+					<p class="mb-10 pt-4 text-black leading-relaxed">Sebuah Platform bisnis yang menyediakan berbagai kebutuhan Sosial Media seperti Instagram, Youtube, Facebook, Twitter, dll. layanan Pulsa All Operator, Token PLN, Paket Data, Saldo E-money, Voucher Game, Tagihan PASCABAYAR dan Banyak lagi. </p> 
+
+					<div class="flex flex-wrap justify-evenly justify-around ">
+							<a href="https://member.rotasipedia.com/page/product"
+								class="bg-primary m-2 text-sm flex justify-center items-center text-white hover:scale-105 lg:hover:scale-125 flex justify-center font-semibold  px-3  py-4 lg:px-2 rounded-lg hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out ">
+								<svg style="width:24px;height:24px" class="" viewBox="0 0 24 24">
+									<path fill="currentColor"
+										d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9M1,10H3V20H19V22H1V10Z" />
+								</svg> <span class="ml-1">Daftar Harga</span></a>
+							<a href="https://rotasipedia.com/auth/login"
+								class="bg-cyan-500 text-sm m-2 text-white hover:scale-105 lg:hover:scale-125 flex justify-center font-semibold  px-2  py-4 lg:px-2 rounded-lg hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out ">Login
+								Web Lama</a>
+					</div>
+
+				 </div>
+				<div class="w-full self-end px-3 hidden lg:block xl:block -z-50 lg:w-1/2"> <img src="assets/images/gambar-kanan.png" class=" mx-auto absolute -top-72  right-0 translate-x-14 " alt="gambar kanan" width="621"> </div>
+			</div>
+			<!-- blob start -->
+			<div class="loading_cont absolute -top-80 -left-80 -z-30">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="loader">
+					<defs>
+						<filter id="goo">
+							<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+							<feBlend in2="goo" in="SourceGraphic" result="mix" /> </filter>
+						<linearGradient id="MyGradient">
+							<stop offset="5%" stop-color="#40204c" />
+							<stop offset="40%" stop-color="#a3225c" />
+							<stop offset="100%" stop-color="#e24926" /> </linearGradient>
+					</defs>
+					<mask id="maska">
+						<g class="blobs">
+							<circle class="blob" cx="440" cy="250" r="30" transform="rotate(0) translate(0, 0) rotate(0)" />
+							<circle class="blob" cx="500" cy="320" r="70" transform="rotate(0) translate(0, 0) rotate(0)" />
+							<circle class="blob" cx="300" cy="390" r="40" transform="rotate(0) translate(0, 0) rotate(0)" />
+							<circle class="blob" cx="380" cy="390" r="80" transform="rotate(0) translate(0, 0) rotate(0)" />
+							<circle class="blob" cx="470" cy="450" r="20" transform="rotate(0) translate(0, 0) rotate(0)" /> </g>
+					</mask>
+					<rect x="200" y="200" mask="url(#maska)" fill="url(#MyGradient)" width="400" height="400">
+				</svg>
+			</div>
+			<!-- end Blob -->
+		</div>
+	</section>
+	<!-- end hero -->
+
+	
+	<!-- data statistik -->
+	<section id="data-statistik" class="mt-28 lg:mt-24 px-2">
+		<div class="container">
+			<div class="flex justify-center lg:pt-24 lg:pb-4">
+				<h1 class="font-semibold text-3xl">Data Statistik Kami</h1> </div>
+			<div class="flex flex-wrap  justify-between">
+				<div class="w-full self-center px-3 lg:flex justify-between items-center">
+					<div class="bg-card   border-solid  border-gray-400 py-4 my-2 shadow-md flex flex-col justify-center items-center text-center lg:w-[25%] h-40  my-3 rounded-md border border-gray-200">
+						<h2 class="text-red-500 font-bold text-4xl"> 12.203+ </span>
+						</h2>
+						<p class="font-semibold ">Total Pengguna</p>
+					</div>
+					<div class="bg-card-02 relative  border-solid border-gray-400 py-4 my-2 shadow-md flex flex-col justify-center items-center text-center lg:w-[25%] h-40  my-3 rounded-md border border-gray-200">
+						<h2 class="text-red-500 font-bold text-4xl">Rp 18.267.210 </span>
+						</h2>
+						<!--<?php echo number_format($total_pemsanan, 0, ',', '.'); ?>-->
+						<p class="font-semibold ">Total Pemesanan</p>
+						<!-- color blue -->
+						<div> <img src="assets/images/color-blue.svg" width="240" class="border-none rounded-xl absolute -top-28 -z-50 -left-24 bottom-0" alt=""> </div>
+						<!-- end color blue -->
+						<!-- color a -->
+						<div class="hidden lg:block"> <img src="assets/images/color-a.svg" width="240" class="border-none rounded-xl absolute top-12 -z-50 -right-14 bottom-0" alt=""> </div>
+						<!-- end color a -->
+					</div>
+					<div class="bg-card border-solid border-gray-400 py-4 my-2 shadow-md flex flex-col justify-center items-center text-center lg:w-[25%] h-40  my-3 rounded-md border border-gray-200">
+						<h2 class="text-red-500 font-bold text-4xl">21031+</span>
+						</h2>
+						<p class="font-semibold ">Total Layanan</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end data stistik -->
+	<!-- bg besar bawah  -->
+	<div class=""></div>
+	<!-- end bg bawah -->
+	<!-- data card -->
+	<section id="data-statistik" class="mt-10 px-2 lg:mt-16">
+		<div class="container">
+			<div class="flex justify-center lg:pt-24 lg:pb-4">
+				<h1 class="font-semibold text-3xl">Keunggulan Kami</h1> </div>
+			<div class="flex flex-wrap justify-between box-border">
+				<div class="w-full flex  flex-col justify-between lg:grid box-border items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 5xl:gap-28">
+					<div class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 5xl:space-x-4 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center 5xl:justify-center 5xl:h-56 5xl:px-32 my-3 rounded-md border border-gray-200 "> <img src="assets/icons/service.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
+						<div>
+							<h3 class="text-black font-bold text-md lg:text-xl">Layanan Terbaik</h3>
+							<p class="font-normal text-base text-sm lg:text-md">Kami menyediakan berbagai layanan digital terbaik untuk kebutuhan Anda . </p>
+						</div>
+					</div>
+					<div class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 5xl:space-x-4 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center 5xl:justify-center 5xl:h-56 5xl:px-32 my-3 rounded-md border border-gray-200 "> <img src="assets/icons/rocket.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
+						<div>
+							<h3 class="text-black font-bold text-sm lg:text-xl">Proses Cepat</h3>
+							<p class="font-normal text-base text-xs lg:text-md">Pesanan Di Proses Secara Otomatis dan Instant,langsung kepada Server kami dan ini sangat menarik. </p>
+						</div>
+					</div>
+					<div class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 5xl:space-x-4 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center md:justify-between  lg:items-center 5xl:justify-center 5xl:h-56 5xl:px-32 my-3 rounded-md border border-gray-200 "> <img src="assets/icons/money.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
+						<div class="">
+							<h3 class="text-black font-bold text-sm lg:text-xl">Deposite Saldo</h3>
+							<p class="font-normal text-base text-xs lg:text-md">Deposit Otomatis 24 Jam,Memudahkan anda deposit kapan saja,dimana saja dan pake apa saja pasti bisa. </p>
+						</div>
+					</div>
+					<div class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 5xl:space-x-4 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center 5xl:justify-center 5xl:h-56 5xl:px-32 my-3 rounded-md border border-gray-200 "> <img src="assets/icons/support.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
+						<div>
+							<h3 class="text-black font-bold text-sm lg:text-xl">Pelayanan Bantuan</h3>
+							<p class="font-normal text-base text-xs lg:text-md">Kami menyediakan beberapa tempat bertanya atau komplain mulai dari tiket bantuan, telegram, whatsapp, facebook, Instagram. </p>
+						</div>
+					</div>
+					<div class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 5xl:space-x-4 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center 5xl:justify-center 5xl:h-56 5xl:px-32 my-3 rounded-md border border-gray-200 "> <img src="assets/icons/device.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
+						<div>
+							<h3 class="text-black font-bold text-sm lg:text-xl">Desain Responsive</h3>
+							<p class="font-normal text-base text-xs lg:text-md">Kami Menggunakan Desain Website Yang Dapat Diakses Dari Berbagai Device, Daik Smartphone Android Maupun Desktop. </p>
+						</div>
+					</div>
+					<div class="bg-card w-4/5 break-words space-x-2 lg:space-x-2 5xl:space-x-4 lg:w-full p-3 border-solid box-border  border-gray-400 my-2 shadow-md flex items-center justify-center lg:justify-center  lg:items-center 5xl:justify-center 5xl:h-56 5xl:px-32 my-3 rounded-md border border-gray-200 "> <img src="assets/icons/code.png" class="w-16 h-16 lg:w-24 lg:h-24 md:w-24 md:h-24" width="99" height="99" alt="service">
+						<div>
+							<h3 class="text-black font-bold text-sm lg:text-xl">Integritas Api</h3>
+							<p class="font-normal text-base text-xs lg:text-md">Kami Menyediakan / support pemesanan via API, Sangat Cocok Untuk Anda Pengguna H2H / operan. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end data stistik -->
+	<!-- about start -->
+	<section id="about" class="mt-10 mb-32 lg:mt-24 px-2 py-4 relative">
+		<div class="container">
+			<div class="flex box-border flex-col lg:gap-14 lg:flex-row lg:flex lg:justify-between justify-between lg:items-center">
+				<div class="w-full flex items-center justify-center lg:pt-0 pt-16 box-border lg:w-1/2"> <img src="assets/images/smm.svg" class="max-w-full mx-auto" alt="gambar kanan "> </div>
+				<div class="w-full rounded-xl mt-7  box-border bg-card-01 py-5 relative self-center flex flex-col px-3 lg:w-1/2">
+					<h1 class="text-2xl  lg:text-3xl font-bold mt-1 lg:mb-5">Tentang <span class="text-red-500">RotasiPedia.com</span>
+					</h1>
+					<p class="mb-6 lg:mb-11  pt-4 font-extralight text-black leading-loose  text-base">RotasiPedia adalah Pusat untuk para Reseller Produk Digital, Jasa All Sosmed dan penyedia layanan sosial media seperti kebutuhan Instagram Followers/Likes/Views/Comments/Facebook Friends/Youtube Subscribers/Watchtime, Pulsa All Operator, Token PLN, Paket Data, Saldo E-money, Voucher Game, Tagihan PASCABAYAR dan masih banyak lagi layanan lainnya dengan harga termurah di Indonesia. </p>
+					<!-- color a -->
+					<div> <img src="assets/images/color-a.svg" width="240" class="border-none rounded-xl absolute top-36 -z-50 right-0 bottom-0" alt=""> </div>
+					<!-- end color a -->
+					<!-- color merah bg -->
+					<div> <img src="assets/images/color-b.svg" width="240" class="border-none rounded-xl absolute top-3 -z-50 -left-16 bottom-0" alt=""> </div>
+					<!-- end bg merah --><a href="https://member.rotasipedia.com/auth/register" class="bg-primary text-sm lg:text-lg flex justify-center items-center font-semibold text-black h-11 w-60 lg:h-14 rounded-lg hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out hover:scale-120">Daftar Member </a> </div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- testimoni start -->
+	<section id="testimonial" class="flex  justify-between items-center bg-map lg:mt-32 mt-32 my-40 " style="max-height:440px;">
+		<div class="container">
+			<div class="flex justify-center mb-36 lg:-mt-28">
+				<h1 class="font-semibold text-3xl relative -bottom-14">Testimonial User</h1> </div>
+			<!-- Swiper -->
+			<div class="swiper mySwiper ">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide atas-card">
+						<div class="flex lg:translate-y-20 flex-1 relative justify-center items-center gap-4 px-3 bg-white rounded-lg shadow-lg border border-solid py-3" style="max-width:420px;"> <img src="assets/icons/lonceng.svg" class="w-16 absolute right-11 -top-7" alt=""> <img src="assets/images/ismat.webp" class="
+								" width="75" alt="">
+							<div class="">
+								<h2 class="font-bold text-xl">Ismat</h2>
+								<div class="flex gap-2 py-2"> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> </div>
+								<p class="text-slate-600 text-left">Pelayanan nya baik fitur nya update respon cepat nanya slalu di jawab komplen order gk ribet deposit berbagai cara bisa simple dan praktis.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide atas-card">
+						<div class="flex lg:translate-y-20 flex-1 relative justify-center items-center gap-4 px-3 bg-white rounded-lg shadow-lg border border-solid py-3" style="max-width:420px;"> <img src="assets/icons/lonceng.svg" class="w-16 absolute right-11 -top-7" alt=""> <img src="assets/images/farhan.webp" class="rounded-full" width="75" alt="">
+							<div class="">
+								<h2 class="font-bold text-xl">Farhan</h2>
+								<div class="flex gap-2 py-2"> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> </div>
+								<p class="text-slate-600 text-left">Website sangat mudah digunakan, tampilannya bagus, responsive, dan desain minimalis.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide atas-card">
+						<div class="flex lg:translate-y-20 flex-1 relative justify-center items-center gap-4 px-3 bg-white rounded-lg shadow-lg border border-solid py-3" style="max-width:420px;"> <img src="assets/icons/lonceng.svg" class="w-16 absolute right-11 -top-7" alt=""> <img src="https://rotasipedia.com/assets/images/abdulazis.webp" class="rounded-full" width="75" alt="">
+							<div class="">
+								<h2 class="font-bold text-xl">Abdul Azis</h2>
+								<div class="flex gap-2 py-2"> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> </div>
+								<p class="text-slate-600 text-left">Website mudah digunakan, terutama CS nya cpt bales ketika ada keluhan.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide atas-card">
+						<div class="flex lg:translate-y-20 flex-1 relative justify-center items-center gap-4 px-3 bg-white rounded-lg shadow-lg border border-solid py-3" style="max-width:420px;"> <img src="assets/icons/lonceng.svg" class="w-16 absolute right-11 -top-7" alt=""> <img src="assets/images/sultan.png" class="rounded-full" width="75" alt="">
+							<div class="">
+								<h2 class="font-bold text-xl">Sultan Sosmed</h2>
+								<p style="font-size:13px;">Reseller Sosmed</p>
+								<div class="flex gap-2 py-2"> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6"  alt=""> </div>
+								<p class="text-slate-600 text-left">Harga murah-murah, Jadi bisa ngambil untung nya lumayan.</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide atas-card">
+						<div class="flex lg:translate-y-20 flex-1 relative justify-center items-center gap-4 px-3 bg-white rounded-lg shadow-lg border border-solid py-3" style="max-width:420px;"> <img src="assets/icons/lonceng.svg" class="w-16 absolute right-11 -top-7" alt=""> <img src="assets/images/ato.webp"  width="75" alt="">
+							<div class="">
+								<h2 class="font-bold text-xl">Ato</h2>
+								<div class="flex gap-2 py-2"> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> <img src="assets/icons/start.svg" class="w-6" alt=""> </div>
+								<p class="text-slate-600 text-left">Rekomended nih harganya murah, dan lengkap lagi 👌</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+	<!-- end testimoni -->
+	<!-- footer -->
+	<footer class="flex justify-betwen flex-col mt-52 items-center bg-black">
+		<div class="container">
+			<div class="flex flex-col lg:flex-row lg:justify-between lg:space-x-4 px-2 py-4">
+				<div class="flex flex-col justify-start lg:w-1/2"> <img src="assets/icons/rotasi-no.svg" class="w-64" alt="">
+					<p class="my-7 text-white "> RotasiPedia.com adalah sebuah Platform bisnis yang menyediakan berbagai kebutuhan Sosial Media seperti Instagram, Youtube, Facebook, Twitter, dll. Kami juga menyediakan berbagai layanan Pulsa All Operator, Token PLN, Paket Data, Saldo E-money, Voucher Game, Tagihan PASCABAYAR dan Banyak lagi. </p>
+					<div class="">
+						<p class="text-white"> <span> 📌 Jawa Barat, Indonesia, Jln Bayangkara, Kota Sukabumi </span>
+							<br> <span> 📞 +62-851-5606-4650 </span>
+							<br> <span> 📧 support@rotasipedia.com </span> </p>
+					</div>
+				</div>
+				<div class="flex justify-between lg:flex-none md:flex-none">
+					<div class="flex flex-col justify-center lg:w-72 mt-5  lg:mt-0">
+						<h1 class="text-white font-bold uppercase pb-2 text-xl">Produk</h1>
+						<ul class="text-white space-y-3">
+							<li class=""> <a href="#" class="capitalize">Pascabayar</a> </li>
+							<li class=""> <a href="#" class="capitalize">Pulsa Transfer</a> </li>
+							<li class=""> <a href="#" class="capitalize">Pulsa Reguler</a> </li>
+							<li class=""> <a href="#" class="capitalize">Pulsa Internasional</a> </li>
+							<li class=""> <a href="#" class="capitalize">Paket Telepon dan SMS</a> </li>
+							<li class=""> <a href="#" class="capitalize">Token Listrik (PLN)</a> </li>
+							<li class=""> <a href="#" class="capitalize">Streaming & TV</a> </li>
+							<li class=""> <a href="#" class="capitalize">Aktivasi Voucher</a> </li>
+							<li class=""> <a href="#" class="capitalize">Paket Internet</a> </li>
+							<li class=""> <a href="#" class="capitalize">Saldo E-Money</a> </li>
+							<li class=""> <a href="#" class="capitalize">Top Up Game</a> </li>
+							<li class=""> <a href="#" class="capitalize">Voucher & Lainnya</a> </li>
+							<li class=""> <a href="#" class="capitalize">Sosial Media Panel</a> </li>
+						</ul>
+					</div>
+					<div class="flex flex-col justify-start lg:w-72 mt-5 lg:mt-0">
+						<h1 class="text-white font-bold uppercase pb-2 text-xl">Informasi</h1>
+						<ul class="text-white space-y-3">
+							<li class=""> <a href="#" class="capitalize">Dokumentasi</a> </li>
+							<li class=""> <a href="page/kontak.html" class="capitalize">Kontak Kami</a> </li>
+							<li class=""> <a href="page/privacy-policy.html" class="capitalize">Kebijakan Privasi</a> </li>
+							<li class=""> <a href="page/terms-of-service.html" class="capitalize">Terms of Service</a> </li>
+						</ul>
+					</div>
+				</div>
+				<div class="flex flex-col justify-between  lg:justify-start lg:w-72 mt-5 lg:mt-0">
+					<h1 class="text-white text-xl font-bold pb-2">Accepted Payment Method</h1> <img src="assets/logo-pay/payment.png" class="pt-5" alt=""> </div>
+			</div>
+			<!-- garis -->
+		</div>
+		<div class="border-b-2 border-gray-500 py-2 w-full"></div>
+		<div class="py-6">
+			<a class="text-white"> <span class="text-bold text-xl">RotasiPedia</span> <span class="text-red-500">❤</span> <span class="text-gray-200"> 2022. All Rights Reserved.</span> </a>
+		</div>
+	</footer>
+	<!-- footer -->
+
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	
+	<script>
+	
+	function checkMediaQuery() {
+		// If the inner width of the window is greater then 768px
+		if(window.innerWidth > 1280) {
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				slidesPerGroup: 3,
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		} else if(Window.innerWidth > 768) {
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 2,
+				spaceBetween: 30,
+				slidesPerGroup: 2,
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		} else{
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 1,
+				spaceBetween: 30,
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		}
+	}
+	</script>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+	<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+	<script src="assets/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

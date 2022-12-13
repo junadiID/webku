@@ -1,0 +1,205 @@
+  .container-flex {
+  }
+
+  .container-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+/* resvonsipe */
+.hilang {
+    /* visibility: hidden; */
+    display: none;
+}
+
+
+
+.atas{
+    position: relative;
+    left: -10px;
+    color: #ffffff60;
+}
+
+/* buton login */
+.bg-transfarant{
+    background-color: #ffffff60;
+}
+
+/* bg navbar mobile */
+.bg-mobile{
+    background-color: #fff;
+}
+/* navbar */
+
+.tengah-fix{
+    padding-right: 14px;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+
+.button-responsive{
+    display: block;
+}
+
+.text-mobile{
+    text-align: center;
+}
+
+.button-get{
+    display: flex;
+    justify-content: center;
+}
+
+.bg-kecil{
+    max-width: 1920px;
+}
+
+.web-navbar{
+    justify-content: space-between;
+}
+
+.conten-bg-warna{
+    /* content: ''; */
+    background-image: url(../images/bg-atas-color.svg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    position: absolute;
+    z-index: -100;
+
+}
+
+
+
+
+
+
+/* button hover */
+
+.button-hover:hover{
+    border-bottom: black 2px solid;
+    padding-top: 2px;
+}
+
+/* scroll width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(46, 45, 44); 
+}
+
+
+@media (min-width: 393px) { 
+.atas{
+    position: relative;
+    left: -10px;
+}
+
+/* gambar header */
+.image-responsive{
+    width: 243px;
+
+}
+
+.text-mobile{
+    text-align: center;
+}
+
+.button-responsive{
+    display: block;
+}
+
+.button-get{
+    display: flex;
+    justify-content: center;
+}
+
+.web-navbar{
+    justify-content: space-between;
+}
+
+
+}
+
+
+
+
+
+@media (min-width: 792px) { 
+.hilang {
+/* visibility: visible; */
+display: block;
+
+}
+.image-responsive{
+width: 331px;
+height: 353px;
+}
+
+/* bg navbar mobile */
+.bg-mobile{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.text-mobile{
+    text-align: left;
+    justify-content: space-between;
+}
+
+.button-get{
+    display: flex;
+    justify-content: left;
+}
+
+.web-navbar{
+    justify-content: left;
+}
+
+
+
+
+
+}
+
+
+@media (min-width: 1024px) { 
+.hilang {
+/* visibility: visible; */
+display: block;
+}
+
+.atas-card{
+ top:-100px;   
+}
+
+.image-responsive{
+width: 621px;
+height: 643px;
+
+}
+
+/* bg navbar mobile */
+.bg-mobile{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.button-get{
+    display: flex;
+    justify-content: left;
+}
+
+.web-navbar{
+    justify-content: space-between;
+}
+
+
+
+
+}

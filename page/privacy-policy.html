@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>RotasiPedia</title>
+</head>
+
+<body class="conten-bg-warna overflow-y-auto">
+
+    <!-- start navbar mobile -->
+    <section id="navMenu" class="relative hidden  lg:hidden xl:hidden  hamburger flex transition-all ease-in  duration-700">
+        <div style="height: 100vh;"
+            class="bg-white shadow-xl fixed flex z-50 flex-col justify-between   z-50  w-64    px-5  py-7">
+            <ul class="flex flex-col space-y-3 w-full">
+                <li
+                    class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1">
+                    <a>about</a>
+                </li>
+                <li
+                    class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1">
+                    <a>Testimonial</a>
+                </li>
+                <li
+                    class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1">
+                    <a>Daftar Harga</a>
+                </li>
+                <li
+                    class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1">
+                    <a href="https://member.rotasipedia.com/page/general-questions">Pertanyaan Umum</a>
+                </li>
+                <li
+                    class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1">
+                    <a href="https://blog.rotasipedia.com/">Blog</a>
+                </li>
+                <li
+                    class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1">
+                    <a href="kontak.html">Kontak</a>
+                </li>
+                <li
+                    class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1">
+                    <a href="team.html">Team</a>
+                </li>
+                <li
+                    class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1">
+                    <a href="terms-of-service.html">Terms Of Services</a>
+                </li>
+                <li
+                    class="hover:bg-teal-600 py-3 px-3 cursor-pointer hover:shadow-md hover:rounded-lg hover:text-white hover:relative hover:top-1">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </li>
+            </ul>
+    
+            <div>
+                <a
+                    class="bg-blue-600 px-3 py-4 duration-300 hover:ease-in-out   rounded-lg hover:relative hover:bottom-2 cursor-pointer text-white hover:bg-cyan-500 pointer-events-auto">Area
+                    Pelanggan</a>
+            </div>
+        </div>
+        <div style="height: 100vh;" onclick="addtogle()" class="w-full   absolute right-0 top-0">
+        </div>
+    </section>
+    <!-- end navbar mobile -->
+    
+    <!-- header start -->
+    <header class="bg-transparent relative items-center top-0 left-0 w-full flex z-20">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-2">
+                    <a href="../index.html" class=" flex text-white"> <img src="../assets/icons/logo-rotasi.svg"
+                            class="w-16" alt="">
+                    </a>
+                </div>
+                <div class="flex items-center px-2">
+                    <button onclick="addtogle()" id="hamburger" name="hamburger" type="button"
+                        class="block hamburger absolute right-4 lg:hidden">
+                        <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+                    <nav
+                        class="hidden animate__animated bg-white lg:block absolute mt-1 lg:mt-0 right-4 top-full py-5 border-solid border-gray-300 border-[1px]  shadow-lg rounded-lg max-w-[250px] w-full lg:static lg:border-none lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none transition-all ease-in-out duration-300">
+                        <ul class="block lg:flex relative lg:-left-14">
+                            <li class="group"> <a href="../index.html"
+                                    class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">Beranda</a> </li>
+                            <li class="group"> <a href="../index.html#about"
+                                    class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">Abaout</a> </li>
+                            <li class="group"> <a href="../index.html#testimonial"
+                                    class="text-base text-black py-2 mx-6 flex  group-hover:text-primary">Testimonial</a>
+                            </li>
+                            <li class="group py-2 mx-6 mb-5 md:mb-0 lg:mb-0 ">
+                                <button onclick="dropDown()" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                    class="flex justify-between  items-center w-full text-base text-black rounded "> Page
+                                    <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <!-- Dropdown menu -->
+                                <div id="dropdownNavbar"
+                                    class="hidden z-10 w-44 font-normal bg-white rounded border divide-y divide-gray-100 shadow"
+                                    style="backdrop-filter: blur(5px);">
+                                    <ul class="py-1 text-sm text-black" aria-labelledby="dropdownLargeButton">
+                                        <li> <a href="https://member.rotasipedia.com/page/general-questions"
+                                                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">FaQs</a>
+                                        </li>
+                                        <li> <a href="https://blog.rotasipedia.com/"
+                                                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog</a>
+                                        </li>
+                                        <li> <a href="kontak.html"
+                                                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Kontak</a>
+                                        </li>
+                                        <li> <a href="team.html"
+                                                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Team</a>
+                                        </li>
+                                        <li> <a href="terms-of-service.html"
+                                                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Terms
+                                                Of Services</a> </li>
+                                        <li> <a href="privacy-policy.html"
+                                                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Privacy
+                                                Policy</a> </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="group ">
+                                <div class="block flex justify-center  box-border relative  lg:-right-[69px]">
+                                    <a href="https://member.rotasipedia.com/auth/login" type="button"
+                                        class="flex justify-center items-center mx-5 py-2 hilang text-red-600 hover:bg-gray-100 bg-white bg-opacity-50 w-[100px] h-[37px] font-semibold  p-1 rounded-md border border-red-600">
+                                        Login </a>
+                                    <a href="https://member.rotasipedia.com/auth/register" type="button"
+                                        class="flex justify-center items-center  mx-5 py-2 text-white hover:bg-red-500 w-[100px] h-[37px] font-semibold  p-1 rounded-md bg-red-600">Daftar
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end Header -->
+
+    <!-- terms-service start -->
+    <section id="term-of-service" class="pt-36 lg:pt-36 px-2">
+        <div class="container">
+
+            <div class="flex flex-col justify-between items-center">
+                <h1 class="text-2xl lg:text-3xl font-bold mt-1 text-center mb-28">Privacy Policy</h1>
+                <div
+                    class="flex flex-col justify-between box-border w-full self-center bg-blur-primary  px-3 lg:-mt-10 bg-white border rounded-lg px-8 py-4 text-black leading-loose">
+                    <h2 class="font-semibold text-black text-2xl mb-3"><b>PRIVACY POLICY</b></h2>
+                    <p class="my-2">Effective date: 2022-09-22</p>
+                    <p class="font-bold text-2xl my-2">1. <b>Introduction</b></p>
+                    <p>Welcome to <b> RotasiPedia</b>.</p>
+                    <p class="my-2"><b>RotasiPedia</b> (“us”, “we”, or “our”) operates
+                        <b>https://rotasipedia.com/</b> (hereinafter referred to as
+                        <b>“Service”</b>).
+                    </p>
+                    <p>Our Privacy Policy governs your visit to <b>https://rotasipedia.com/</b>, and explains how we
+                        collect, safeguard and
+                        disclose information that results from your use of our Service.</p>
+                    <p>We use your data to provide and improve Service. By using Service, you agree to the collection
+                        and use of information
+                        in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used
+                        in this Privacy
+                        Policy have the same meanings as in our Terms and Conditions.</p>
+                    <p>Our Terms and Conditions (<b>“Terms”</b>) govern all use of our Service and together with the
+                        Privacy Policy
+                        constitutes your agreement with us (<b>“agreement”</b>).</p>
+                    <p class="font-bold text-2xl my-2">2. <b>Definitions</b></p>
+                    <p><b>SERVICE</b> means the https://rotasipedia.com/ website operated by RotasiPedia.</p>
+                    <p><b>PERSONAL DATA</b> means data about a living individual who can be identified from those data
+                        (or from those and
+                        other information either in our possession or likely to come into our possession).</p>
+                    <p><b>USAGE DATA</b> is data collected automatically either generated by the use of Service or from
+                        Service
+                        infrastructure itself (for example, the duration of a page visit).</p>
+                    <p><b>COOKIES</b> are small files stored on your device (computer or mobile device).</p>
+                    <p><b>DATA CONTROLLER</b> means a natural or legal person who (either alone or jointly or in common
+                        with other persons)
+                        determines the purposes for which and the manner in which any personal data are, or are to be,
+                        processed. For the
+                        purpose of this Privacy Policy, we are a Data Controller of your data.</p>
+                    <p><b>DATA PROCESSORS (OR SERVICE PROVIDERS)</b> means any natural or legal person who processes the
+                        data on behalf of
+                        the Data Controller. We may use the services of various Service Providers in order to process
+                        your data more
+                        effectively.</p>
+                    <p><b>DATA SUBJECT</b> is any living individual who is the subject of Personal Data.</p>
+                    <p><b>THE USER</b> is the individual using our Service. The User corresponds to the Data Subject,
+                        who is the subject of
+                        Personal Data.</p>
+                    <p class="font-bold text-2xl my-2">3. <b>Information Collection and Use</b></p>
+                    <p>We collect several different types of information for various purposes to provide and improve our
+                        Service to you.</p>
+                    <p class="font-bold text-2xl my-2">4. <b>Types of Data Collected</b></p>
+                    <p><b>Personal Data</b></p>
+                    <p>While using our Service, we may ask you to provide us with certain personally identifiable
+                        information that can be
+                        used to contact or identify you (<b>“Personal Data”</b>). Personally identifiable information
+                        may include, but is
+                        not limited to:</p>
+                    <p>0.1. Email address</p>
+                    <p>0.2. First name and last name</p>
+                    <p>0.3. Phone number</p>
+                    <p>0.4. Address, Country, State, Province, ZIP/Postal code, City</p>
+                    <p>0.5. Cookies and Usage Data</p>
+                    <p>We may use your Personal Data to contact you with newsletters, marketing or promotional materials
+                        and other
+                        information that may be of interest to you. You may opt out of receiving any, or all, of these
+                        communications from
+                        us by following the unsubscribe link.</p>
+                    <p class=""><b>Usage Data</b></p>
+                    <p>We may also collect information that your browser sends whenever you visit our Service or when
+                        you access Service by
+                        or through any device (<b>“Usage Data”</b>).</p>
+                    <p>This Usage Data may include information such as your computer’s Internet Protocol address (e.g.
+                        IP address), browser
+                        type, browser version, the pages of our Service that you visit, the time and date of your visit,
+                        the time spent on
+                        those pages, unique device identifiers and other diagnostic data.</p>
+                    <p>When you access Service with a device, this Usage Data may include information such as the type
+                        of device you use,
+                        your device unique ID, the IP address of your device, your device operating system, the type of
+                        Internet browser you
+                        use, unique device identifiers and other diagnostic data.</p>
+                    <p><b>Location Data</b></p>
+                    <p>We may use and store information about your location if you give us permission to do so
+                        (<b>“Location Data”</b>). We
+                        use this data to provide features of our Service, to improve and customize our Service.</p>
+                    <p>You can enable or disable location services when you use our Service at any time by way of your
+                        device settings.</p>
+                    <p><b>Tracking Cookies Data</b></p>
+                    <p>We use cookies and similar tracking technologies to track the activity on our Service and we hold
+                        certain
+                        information.</p>
+                    <p>Cookies are files with a small amount of data which may include an anonymous unique identifier.
+                        Cookies are sent to
+                        your browser from a website and stored on your device. Other tracking technologies are also used
+                        such as beacons,
+                        tags and scripts to collect and track information and to improve and analyze our Service.</p>
+                    <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
+                        However, if you do
+                        not accept cookies, you may not be able to use some portions of our Service.</p>
+                    <p>Examples of Cookies we use:</p>
+                    <p>0.1. <b>Session Cookies:</b> We use Session Cookies to operate our Service.</p>
+                    <p>0.2. <b>Preference Cookies:</b> We use Preference Cookies to remember your preferences and
+                        various settings.</p>
+                    <p>0.3. <b>Security Cookies:</b> We use Security Cookies for security purposes.</p>
+                    <p>0.4. <b>Advertising Cookies:</b> Advertising Cookies are used to serve you with advertisements
+                        that may be relevant
+                        to you and your interests.</p>
+                    <p><b>Other Data</b></p>
+                    <p>While using our Service, we may also collect the following information: sex, age, date of birth,
+                        place of birth,
+                        passport details, citizenship, registration at place of residence and actual address, telephone
+                        number (work,
+                        mobile), details of documents on education, qualification, professional training, employment
+                        agreements, <a href="https://policymaker.io/non-disclosure-agreement/">NDA agreements</a>,
+                        information on bonuses and
+                        compensation, information on marital status, family members, social security (or other taxpayer
+                        identification)
+                        number, office location and other data.</p>
+                    <p class="font-bold text-2xl my-2">5. <b>Use of Data</b></p>
+                    <p>RotasiPedia uses the collected data for various purposes:</p>
+                    <p>0.1. to provide and maintain our Service;</p>
+                    <p>0.2. to notify you about changes to our Service;</p>
+                    <p>0.3. to allow you to participate in interactive features of our Service when you choose to do so;
+                    </p>
+                    <p>0.4. to provide customer support;</p>
+                    <p>0.5. to gather analysis or valuable information so that we can improve our Service;</p>
+                    <p>0.6. to monitor the usage of our Service;</p>
+                    <p>0.7. to detect, prevent and address technical issues;</p>
+                    <p>0.8. to fulfil any other purpose for which you provide it;</p>
+                    <p>0.9. to carry out our obligations and enforce our rights arising from any contracts entered into
+                        between you and us,
+                        including for billing and collection;</p>
+                    <p>0.10. to provide you with notices about your account and/or subscription, including expiration
+                        and renewal notices,
+                        email-instructions, etc.;</p>
+                    <p>0.11. to provide you with news, special offers and general information about other goods,
+                        services and events which
+                        we offer that are similar to those that you have already purchased or enquired about unless you
+                        have opted not to
+                        receive such information;</p>
+                    <p>0.12. in any other way we may describe when you provide the information;</p>
+                    <p>0.13. for any other purpose with your consent.</p>
+                    <p class="font-bold text-2xl my-2">6. <b>Retention of Data</b></p>
+                    <p>We will retain your Personal Data only for as long as is necessary for the purposes set out in
+                        this Privacy Policy.
+                        We will retain and use your Personal Data to the extent necessary to comply with our legal
+                        obligations (for example,
+                        if we are required to retain your data to comply with applicable laws), resolve disputes, and
+                        enforce our legal
+                        agreements and policies.</p>
+                    <p>We will also retain Usage Data for internal analysis purposes. Usage Data is generally retained
+                        for a shorter period,
+                        except when this data is used to strengthen the security or to improve the functionality of our
+                        Service, or we are
+                        legally obligated to retain this data for longer time periods.</p>
+                    <p class="font-bold text-2xl my-2">7. <b>Transfer of Data</b></p>
+                    <p>Your information, including Personal Data, may be transferred to – and maintained on – computers
+                        located outside of
+                        your state, province, country or other governmental jurisdiction where the data protection laws
+                        may differ from
+                        those of your jurisdiction.</p>
+                    <p>If you are located outside Indonesia and choose to provide information to us, please note that we
+                        transfer the data,
+                        including Personal Data, to Indonesia and process it there.</p>
+                    <p>Your consent to this Privacy Policy followed by your submission of such information represents
+                        your agreement to that
+                        transfer.</p>
+                    <p>RotasiPedia will take all the steps reasonably necessary to ensure that your data is treated
+                        securely and in
+                        accordance with this Privacy Policy and no transfer of your Personal Data will take place to an
+                        organisation or a
+                        country unless there are adequate controls in place including the security of your data and
+                        other personal
+                        information.</p>
+                    <p class="font-bold text-2xl my-2">8. <b>Disclosure of Data</b></p>
+                    <p>We may disclose personal information that we collect, or you provide:</p>
+                    <p>0.1. <b>Disclosure for Law Enforcement.</b></p>
+                    <p>Under certain circumstances, we may be required to disclose your Personal Data if required to do
+                        so by law or in
+                        response to valid requests by public authorities.</p>
+                    <p>0.2. <b>Business Transaction.</b></p>
+                    <p>If we or our subsidiaries are involved in a merger, acquisition or asset sale, your Personal Data
+                        may be transferred.
+                    </p>
+                    <p>0.3. <b>Other cases. We may disclose your information also:</b></p>
+                    <p>0.3.1. to our subsidiaries and affiliates;</p>
+                    <p>0.3.2. to contractors, service providers, and other third parties we use to support our business;
+                    </p>
+                    <p>0.3.3. to fulfill the purpose for which you provide it;</p>
+                    <p>0.3.4. for the purpose of including your company’s logo on our website;</p>
+                    <p>0.3.5. for any other purpose disclosed by us when you provide the information;</p>
+                    <p>0.3.6. with your consent in any other cases;</p>
+                    <p>0.3.7. if we believe disclosure is necessary or appropriate to protect the rights, property, or
+                        safety of the
+                        Company, our customers, or others.</p>
+                    <p class="font-bold text-2xl my-2">9. <b>Security of Data</b></p>
+                    <p>The security of your data is important to us but remember that no method of transmission over the
+                        Internet or method
+                        of electronic storage is 100% secure. While we strive to use commercially acceptable means to
+                        protect your Personal
+                        Data, we cannot guarantee its absolute security.</p>
+                    <p class="font-bold text-2xl my-2">10. <b>Your Data Protection Rights Under General Data Protection
+                            Regulation (GDPR)
+                        </b></p>
+                    <p>If you are a resident of the European Union (EU) and European Economic Area (EEA), you have
+                        certain data protection
+                        rights, covered by GDPR.</p>
+                    <p>We aim to take reasonable steps to allow you to correct, amend, delete, or limit the use of your
+                        Personal Data.</p>
+                    <p> If you wish to be informed what Personal Data we hold about you and if you want it to be removed
+                        from our systems,
+                        please email us at <b>admin@rotasipedia.com</b>.</p>
+                    <p>In certain circumstances, you have the following data protection rights:</p>
+                    <p>0.1. the right to access, update or to delete the information we have on you;</p>
+                    <p>0.2. the right of rectification. You have the right to have your information rectified if that
+                        information is
+                        inaccurate or incomplete;</p>
+                    <p>0.3. the right to object. You have the right to object to our processing of your Personal Data;
+                    </p>
+                    <p>0.4. the right of restriction. You have the right to request that we restrict the processing of
+                        your personal
+                        information;</p>
+                    <p>0.5. the right to data portability. You have the right to be provided with a copy of your
+                        Personal Data in a
+                        structured, machine-readable and commonly used format;</p>
+                    <p>0.6. the right to withdraw consent. You also have the right to withdraw your consent at any time
+                        where we rely on
+                        your consent to process your personal information;</p>
+                    <p>Please note that we may ask you to verify your identity before responding to such requests.
+                        Please note, we may not
+                        able to provide Service without some necessary data.</p>
+                    <p>You have the right to complain to a Data Protection Authority about our collection and use of
+                        your Personal Data. For
+                        more information, please contact your local data protection authority in the European Economic
+                        Area (EEA).</p>
+                    <p class="font-bold text-2xl my-2">11. <b>Your Data Protection Rights under the California Privacy
+                            Protection Act (CalOPPA)</b></p>
+                    <p>CalOPPA is the first state law in the nation to require commercial websites and online services
+                        to post a privacy
+                        policy. The law’s reach stretches well beyond California to require a person or company in the
+                        United States (and
+                        conceivable the world) that operates websites collecting personally identifiable information
+                        from California
+                        consumers to post a conspicuous privacy policy on its website stating exactly the information
+                        being collected and
+                        those individuals with whom it is being shared, and to comply with this policy.</p>
+                    <p>According to CalOPPA we agree to the following:</p>
+                    <p>0.1. users can visit our site anonymously;</p>
+                    <p>0.2. our Privacy Policy link includes the word “Privacy”, and can easily be found on the home
+                        page of our website;
+                    </p>
+                    <p>0.3. users will be notified of any privacy policy changes on our Privacy Policy Page;</p>
+                    <p>0.4. users are able to change their personal information by emailing us at
+                        <b>admin@rotasipedia.com</b>.</p>
+                    <p>Our Policy on “Do Not Track” Signals:</p>
+                    <p>We honor Do Not Track signals and do not track, plant cookies, or use advertising when a Do Not
+                        Track browser
+                        mechanism is in place. Do Not Track is a preference you can set in your web browser to inform
+                        websites that you do
+                        not want to be tracked.</p>
+                    <p>You can enable or disable Do Not Track by visiting the Preferences or Settings page of your web
+                        browser.</p>
+                    <p class="font-bold text-2xl my-2">12. <b>Your Data Protection Rights under the California Consumer
+                            Privacy Act (CCPA)</b></p>
+                    <p>If you are a California resident, you are entitled to learn what data we collect about you, ask
+                        to delete your data
+                        and not to sell (share) it. To exercise your data protection rights, you can make certain
+                        requests and ask us:</p>
+                    <p><b>0.1. What personal information we have about you. If you make this request, we will return to
+                            you:</b></p>
+                    <p>0.0.1. The categories of personal information we have collected about you.</p>
+                    <p>0.0.2. The categories of sources from which we collect your personal information.</p>
+                    <p>0.0.3. The business or commercial purpose for collecting or selling your personal information.
+                    </p>
+                    <p>0.0.4. The categories of third parties with whom we share personal information.</p>
+                    <p>0.0.5. The specific pieces of personal information we have collected about you.</p>
+                    <p>0.0.6. A list of categories of personal information that we have sold, along with the category of
+                        any other company
+                        we sold it to. If we have not sold your personal information, we will inform you of that fact.
+                    </p>
+                    <p>0.0.7. A list of categories of personal information that we have disclosed for a business
+                        purpose, along with the
+                        category of any other company we shared it with.</p>
+                    <p>Please note, you are entitled to ask us to provide you with this information up to two times in a
+                        rolling
+                        twelve-month period. When you make this request, the information provided may be limited to the
+                        personal information
+                        we collected about you in the previous 12 months.</p>
+                    <p><b>0.2. To delete your personal information. If you make this request, we will delete the
+                            personal information we
+                            hold about you as of the date of your request from our records and direct any service
+                            providers to do the same.
+                            In some cases, deletion may be accomplished through de-identification of the information. If
+                            you choose to
+                            delete your personal information, you may not be able to use certain functions that require
+                            your personal
+                            information to operate.</b></p>
+                    <p><b>0.3. To stop selling your personal information. We don’t sell or rent your personal
+                            information to any third
+                            parties for any purpose. We do not sell your personal information for monetary
+                            consideration. However, under
+                            some circumstances, a transfer of personal information to a third party, or within our
+                            family of companies,
+                            without monetary consideration may be considered a “sale” under California law. You are the
+                            only owner of your
+                            Personal Data and can request disclosure or deletion at any time.</b></p>
+                    <p>If you submit a request to stop selling your personal information, we will stop making such
+                        transfers.</p>
+                    <p>Please note, if you ask us to delete or stop selling your data, it may impact your experience
+                        with us, and you may
+                        not be able to participate in certain programs or membership services which require the usage of
+                        your personal
+                        information to function. But in no circumstances, we will discriminate against you for
+                        exercising your rights.</p>
+                    <p>To exercise your California data protection rights described above, please send your request(s)
+                        by email:
+                        <b>admin@rotasipedia.com</b>.
+                    </p>
+                    <p>Your data protection rights, described above, are covered by the CCPA, short for the California
+                        Consumer Privacy Act.
+                        To find out more, visit the official California Legislative Information website. The CCPA took
+                        effect on 01/01/2020.
+                    </p>
+                    <p class="font-bold text-2xl my-2">13. <b>Service Providers</b></p>
+                    <p>We may employ third party companies and individuals to facilitate our Service (<b>“Service
+                            Providers”</b>), provide
+                        Service on our behalf, perform Service-related services or assist us in analysing how our
+                        Service is used.</p>
+                    <p>These third parties have access to your Personal Data only to perform these tasks on our behalf
+                        and are obligated not
+                        to disclose or use it for any other purpose.</p>
+                    <p class="font-bold text-2xl my-2">14. <b>Analytics</b></p>
+                    <p>We may use third-party Service Providers to monitor and analyze the use of our Service.</p>
+                    <p class="font-bold text-2xl my-2">15. <b>CI/CD tools</b></p>
+                    <p>We may use third-party Service Providers to automate the development process of our Service.</p>
+
+                    <p class="font-bold text-2xl my-2">16. <b>Behavioral Remarketing</b></p>
+                    <p>We may use remarketing services to advertise on third party websites to you after you visited our
+                        Service. We and our
+                        third-party vendors use cookies to inform, optimise and serve ads based on your past visits to
+                        our Service.</p>
+                    <p class="font-bold text-2xl my-2">17. <b>Payments</b></p>
+                    <p>We may provide paid products and/or services within Service. In that case, we use third-party
+                        services for payment
+                        processing (e.g. payment processors).</p>
+                    <p>We will not store or collect your payment card details. That information is provided directly to
+                        our third-party
+                        payment processors whose use of your personal information is governed by their Privacy Policy.
+                        These payment
+                        processors adhere to the standards set by PCI-DSS as managed by the PCI Security Standards
+                        Council, which is a joint
+                        effort of brands like Visa, Mastercard, American Express and Discover. PCI-DSS requirements help
+                        ensure the secure
+                        handling of payment information.</p>
+                    <p class="font-bold text-2xl my-2">18. <b>Links to Other Sites</b></p>
+                    <p>Our Service may contain links to other sites that are not operated by us. If you click a third
+                        party link, you will
+                        be directed to that third party’s site. We strongly advise you to review the Privacy Policy of
+                        every site you visit.
+                    </p>
+                    <p>We have no control over and assume no responsibility for the content, privacy policies or
+                        practices of any third
+                        party sites or services.</p>
+                    <p>For example, the outlined <a href="https://policymaker.io/privacy-policy/">privacy policy</a> has
+                        been made using <a href="https://policymaker.io/">PolicyMaker.io</a>, a free tool that helps
+                        create high-quality legal documents.
+                        PolicyMaker’s <a href="https://policymaker.io/privacy-policy/">privacy policy generator</a> is
+                        an easy-to-use tool
+                        for creating a <a href="https://policymaker.io/blog-privacy-policy/">privacy policy for
+                            blog</a>, website,
+                        e-commerce store or mobile app.</p>
+                    <p class="font-bold text-2xl my-2">19. <b><b>Children’s Privacy</b></b></p>
+                    <p>Our Services are not intended for use by children under the age of 18 (<b>“Child”</b> or
+                        <b>“Children”</b>).</p>
+                    <p>We do not knowingly collect personally identifiable information from Children under 18. If you
+                        become aware that a
+                        Child has provided us with Personal Data, please contact us. If we become aware that we have
+                        collected Personal Data
+                        from Children without verification of parental consent, we take steps to remove that information
+                        from our servers.
+                    </p>
+                    <p class="font-bold text-2xl my-2">20. <b>Changes to This Privacy Policy</b></p>
+                    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting
+                        the new Privacy
+                        Policy on this page.</p>
+                    <p>We will let you know via email and/or a prominent notice on our Service, prior to the change
+                        becoming effective and
+                        update “effective date” at the top of this Privacy Policy.</p>
+                    <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this
+                        Privacy Policy are
+                        effective when they are posted on this page.</p>
+                    <p class="font-bold text-2xl my-2">21. <b>Contact Us</b></p>
+                    <p>If you have any questions about this Privacy Policy, please contact us by email:
+                        <b>admin@rotasipedia.com</b>.</p>
+                    <p style="margin-top: 5em; font-size: 0.7em;">This <a
+                            href="https://policymaker.io/privacy-policy/">Privacy Policy</a>
+                        was created for <b>https://rotasipedia.com/</b> by <a
+                            href="https://policymaker.io">PolicyMaker.io</a> on
+                        2022-09-22.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- term-service hero -->
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="flex justify-betwen flex-col mt-52 items-center bg-black">
+        <div class="container">
+            <div class="flex flex-col lg:flex-row lg:justify-between lg:space-x-4 px-2 py-4">
+                <div class="flex flex-col justify-start lg:w-1/2">
+                    <img src="../assets/icons/rotasi-no.svg" class="w-64" alt="">
+                    <p class="my-7 text-white ">
+                        RotasiPedia.com adalah sebuah Platform bisnis yang menyediakan berbagai kebutuhan Sosial Media
+                        seperti
+                        Instagram,
+                        Youtube,
+                        Facebook, Twitter, dll. Kami juga menyediakan berbagai layanan Pulsa All Operator, Token PLN,
+                        Paket Data,
+                        Saldo
+                        E-money,
+                        Voucher Game, Tagihan PASCABAYAR dan Banyak lagi.
+                    </p>
+
+                    <div class="">
+                        <p class="text-white">
+                            <span>
+                                📌 Jawa Barat, Indonesia,
+                                Jln Bayangkara, Kota Sukabumi
+                            </span>
+                            <br>
+                            <span>
+                                📞 +62-851-5606-4650
+                            </span>
+                            <br>
+                            <span>
+                                📧 support@rotasipedia.com
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between lg:flex-none md:flex-none">
+                    <div class="flex flex-col justify-center lg:w-72 mt-5  lg:mt-0">
+                        <h1 class="text-white font-bold uppercase pb-2 text-xl">Produk</h1>
+                        <ul class="text-white space-y-3">
+                            <li class="">
+                                <a href="#" class="capitalize">Pascabayar</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Pulsa Transfer</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Pulsa Reguler</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Pulsa Internasional</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Paket Telepon dan SMS</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Token Listrik (PLN)</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Streaming & TV</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Aktivasi Voucher</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Paket Internet</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Saldo E-Money</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Top Up Game</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Voucher & Lainnya</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="capitalize">Sosial Media Panel</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="flex flex-col justify-start lg:w-72 mt-5 lg:mt-0">
+                        <h1 class="text-white font-bold uppercase pb-2 text-xl">Informasi</h1>
+                        <ul class="text-white space-y-3">
+                            <li class="">
+                                <a href="#" class="capitalize">Dokumentasi</a>
+                            </li>
+                            <li class="">
+                                <a href="kontak.html" class="capitalize">Kontak Kami</a>
+                            </li>
+                            <li class="">
+                                <a href="privacy-policy.html" class="capitalize">Kebijakan Privasi</a>
+                            </li>
+                            <li class="">
+                                <a href="terms-of-service.html" class="capitalize">Terms of Service</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-between  lg:justify-start lg:w-72 mt-5 lg:mt-0">
+                    <h1 class="text-white text-xl font-bold pb-2">Accepted Payment Method</h1>
+                    <img src="../assets/logo-pay/payment.png" class="pt-5" alt="">
+                </div>
+
+            </div>
+
+            <!-- garis -->
+        </div>
+        <div class="border-b-2 border-gray-500 py-2 w-full"></div>
+        <div class="py-6">
+            <a class="text-white"><span class="text-bold text-xl">RotasiPedia</span> <span
+                    class="text-red-500">❤</span><span class="text-gray-200">2022. All Rights Reserved.</span></a>
+        </div>
+    </footer>
+
+    <!-- footer -->
+
+
+
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="../assets/js/script.js" type="text/javascript">
+
+
+    </script>
+
+</body>
+
+</html>
